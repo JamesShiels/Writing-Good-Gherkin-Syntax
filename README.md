@@ -26,9 +26,12 @@ utilize a BDD approach.
 
 ## Steps Overview:
 
-- Given steps should be written in the past-tense, e.g `Given an admin user **has** been created` This sets up the tests context
-- When steps should be written in the present-tense, e.g `When the admin **deletes** a user account` This is the action being tested
-- Then steps should be written in the present-tense, e.g `Then the user **is** unable to login` This is the outcomes that should occur
+- Given steps should be written in the past-tense, e.g `Given an admin user **has** been created` 
+  This sets up the tests context
+- When steps should be written in the present-tense, e.g `When the admin **deletes** a user account` 
+  This is the action being tested
+- Then steps should be written in the present-tense, e.g `Then the user **is** unable to login` 
+  This is the outcomes that should occur
 
 Also read https://lizkeogh.com/2014/09/02/a-little-tense/ for more information on the tenses
 
