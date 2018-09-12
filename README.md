@@ -26,9 +26,11 @@ utilize a BDD approach.
 
 ## Steps Overview:
 
-- Given steps should be written in the past-tense, e.g `Given an admin user **has** been created`
-- When steps should be written in the present-tense, e.g `When the admin **deletes** a user account`
-- Then steps should be written in the present-tense, e.g `Then the user **is** unable to login`
+- Given steps should be written in the past-tense, e.g `Given an admin user **has** been created` This sets up the tests context
+- When steps should be written in the present-tense, e.g `When the admin **deletes** a user account` This is the action being tested
+- Then steps should be written in the present-tense, e.g `Then the user **is** unable to login` This is the outcomes that should occur
+
+Also read https://lizkeogh.com/2014/09/02/a-little-tense/ for more information on the tenses
 
 ## Tags: 
 - Tags should be written in lower case
@@ -59,5 +61,6 @@ Feature: Google searching
   Scenario: Searching on google returns accurate results
     Given the google search page has been loaded `<-- Past tense`
     When the user performs a search for "panda" `<-- Declarative, present-tense`
-    Then the returned results are accurate `<-- Declarative, present-tense, Respectful of the BDD syntax`
+    Then the returned results should be accurate `<-- Declarative, present-tense, Respectful of the BDD syntax`
 ```
+
